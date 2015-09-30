@@ -5,15 +5,17 @@
 */
 public class ProjectEuler6 {
 	public static void main(String[] args) {
+		
 		int sumOfNatNum = 0;
 		int sumOfSquares = 0;
+		
 		for (int i=1; i <= 100; i++){
 			sumOfNatNum = sumOfNatNum + i;
-		}
-		int squareOfSum = sumOfNatNum * sumOfNatNum;
-		for (int i=1; i <=100; i++){
 			sumOfSquares = sumOfSquares + (i * i);
 		}
+		
+		int squareOfSum = sumOfNatNum * sumOfNatNum;
+		
 		System.out.println("");
 		System.out.println("Square of the sum of all natural numbers up to 100:");
 		System.out.println(squareOfSum);
